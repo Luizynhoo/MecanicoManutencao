@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./img/fiveicon.png"/>
+  <title>MSR Consultoria</title>
+</head>
+
+<body>
+  <!-- loader -->
+  <div class="preloader" id="preloader">
+    <div class="loader" id="loader"></div>
+  </div>
+
+  <header id="header">
+    <div class="container">
+      <div class="flex">
+        <!-- logo -->
+        <nav class="logo">
+          <a class="navbar-brand" href="#">
+            <h1>MSR</h1>
+          </a>
+        </nav>
+        <nav id="main">
+          <ul>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#novo">Serviços</li>
+            <li class="nav-item"><a href="#novo2">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- flex -->
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()">
+          <img class="icon" src="img/menu_white_36dp.svg" alt="" />
+        </button>
+      </div>
+      <!-- mobile-menu-icon -->
+    </div>
+    <!--container-->
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="#servicos" class="nav-link">SERVIÇOS</a></li>
+        <li class="nav-item"><a href="#novo2" class="nav-link">SOBRE</a></li>
+
+        <div class="btn-contato">
+          <button><a href="contato.html">Contato</a></button>
+        </div>
+      </ul>
+    </div>
+    <!-- mobile-menu -->
+  </header>
+
+  <!-- banner -->
+  <section class="banner" id="home">
+    <div class="box-container">
+      <h3>
+        SOLUÇÕES QUE GARANTEM EFICIÊNCIA E CONFIABILIDADE PARA SUA OPERAÇÃO!
+      </h3>
+      <div class="btn-contato">
+        <a href="contato.html" id="novo" target="_blank"><button>Contato</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços-->
+  <div class="servicos" id="servicos">
+    <h1>SERVIÇOS</h1>
+    <div class="cards flex4">
+      <div id="card1" class="card">
+        <div id="reparar" class="image-box">
+          <img src="./img/servico1.jpeg" />
+        </div>
+        <div class="content">
+          <h2>Analise de risco de solução </h2>
+
+        </div>
+      </div>
+
+      <div id="card2" class="card">
+        <div class="image-box">
+          <img src="img/servico2.jpg" />
+        </div>
+        <div class="content">
+          <h2>Proposta de solução </h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SOBRE -->
+  <div class="sobre" id="novo2">
+    <div class="sobre-box">
+      <div class="sobre-image">
+        <img src="img/equipe.jpg">
+      </div>
+      <div class="sobre-body">
+        <h1 class="titulo">Sobre nós</h1>
+        <p>Na MSR, somos especializados em consultoria sobre rolamentos, oferecendo soluções personalizadas e análises de riscos. Nossa equipe experiente se dedica a otimizar o desempenho de sistemas, garantindo eficiência e segurança para nossos clientes.
+
+          Estamos prontos para ajudá-lo a enfrentar desafios e agregar valor ao seu negócio.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Desenvolvedores -->
+  <div class="desenvolvedores">
+    <h1 class="titulo">Patrocinadores</h1>
+    <div class="container">
+      <div class="box" data-color="clr1">
+        <div class="imgBx"><img src="img/skf.png" /></div>
+        <div class="glass">
+          <h3>SKF<br /></h3>
+          <ul>
+            <a href="https://www.linkedin.com/company/skf/" target="_blank" style="--i: 2"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/skfgroup?igsh=NHRmbzlkNmFmMngw" target="_blank"
+              style="--i: 3"><i class="fa-brands fa-instagram"></i></a>
+          </ul>
+        </div>
+      </div>
+      <div class="box" data-color="clr3">
+        <div class="imgBx"><img src="img/cher.jpg" /></div>
+        <div class="glass">
+          <h3>Chesterton<br /></h3>
+          <ul>
+            <a href="https://www.linkedin.com/company/a--w--chesterton-company/" target="_blank" style="--i: 2"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </ul>
+        </div>
+      </div>
+      <div class="box" data-color="clr4">
+        <div class="imgBx"><img src="img/chaer.png" /></div>
+        <div class="glass">
+          <h3>Schaeffler - Fag<br /></h3>
+          <ul>
+            <a href="https://www.linkedin.com/company/schaeffler/" target="_blank" style="--i: 2"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/schaefflergroup?igsh=YTlpdGlqaHl6djJp" target="_blank" style="--i: 3"><i
+                class="fa-brands fa-instagram"></i></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer / rodapé -->
+  <footer>
+
+    <div class="container">
+
+      <a href="#" id="topo">
+        <img src="img/topo.png" alt="Ir para o topo do site">
+      </a>
+    </div>
+
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+
+    <ul class="social_icon">
+      <li class="item">
+        <a id="insta" href="https://www.instagram.com/labsolution__/" target="_blank">
+          <i class="fa-brands fa-instagram icon"></i>
+        </a>
+      </li>
+
+      <li class="item">
+        <a id="X" href="https://x.com/Lab_Solution_?t=UwgraDvA45V0Kjosbzv0Qg&s=08" target="_blank">
+          <i class="fa-brands fa-facebook icon"></i>
+        </a>
+      </li>
+      <li class="item">
+        <a id="X" href="https://x.com/Lab_Solution_?t=UwgraDvA45V0Kjosbzv0Qg&s=08" target="_blank">
+          <i class="fa-brands fa-linkedin icon"></i>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="menu">
+      <li><a href="contato.html">Contate-nos</a></li>
+      <li><a href="#novo">Serviços</a></li>
+      <li><a href="#novo2">Sobre</a></li>
+    </ul>
+
+    <p> Copyright &copy; MSR</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

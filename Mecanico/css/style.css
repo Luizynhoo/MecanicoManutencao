@@ -1,11 +1,9 @@
 :root {
-  --roxo: #50128f;
   --branco: #fff;
-  --roxo2: #8e43b3;
-  --azul: #0a0928;
+  --azul: #145d85;
   --preto: #000000;
   --cinza: #616161;
-  --cinza2: #9e9e9e;
+  --cinza2: #747171;
   --verde: #0dc50d;
 
 }
@@ -39,7 +37,7 @@
 
 .loader {
   border: 16px solid #efeee8;
-  border-top: 16px solid #0032a0;
+  border-top: 16px solid #555555;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -109,19 +107,30 @@ html {
 }
 
 body {
-  background-color: #0a0928;
+  background-color: #0b4462;
 }
 
 .logo {
-  & img {
-    width: 15rem;
+  a{
+    text-decoration: none;
+
+    h1{
+      font-size: 3rem;
+      text-decoration: none;
+      color: var(--azul);
+      transition: all 0.2s;
+    }
+
+    h1:hover{
+      transform: scale(1.1);
+    }
   }
 }
 
 
 header {
   width: 100%;
-  padding: 2px 2%;
+  padding: 6px 2%;
   position: fixed;
   top: 0;
   left: 0;
@@ -130,8 +139,9 @@ header {
 
 
   &.rolar {
-    background-color: var(--roxo);
+    background-color: var(--cinza2);
     padding: -50px;
+    border-radius: 5px;
 
     & a {
       color: var(--branco);
@@ -151,7 +161,7 @@ header {
 
   & i {
     font-size: 40px;
-    color: #fff;
+    color: #535252;
   }
 
   & ul {
@@ -167,7 +177,7 @@ header {
 
   & ul li a {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   & li:hover {
@@ -177,14 +187,14 @@ header {
 
   & a:hover {
     text-decoration: none;
-    color: var(--roxo2);
+    color: var(--azul);
   }
 }
 
 
 .banner {
   height: 100vh;
-  background-image: url(../img/banner.png);
+  background-image: url(../img/capa4.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,9 +218,8 @@ header {
     font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
     font-style: normal;
-    color: rgb(255, 255, 255);
-
-    font-size: 1.5em;
+    color: #083b57;
+    font-size: 1.6em;
     padding-left: 30px;
   }
 
@@ -221,16 +230,14 @@ header {
     height: 30px;
     border: 0;
     border-radius: 10px;
-    background-color: var(--roxo2);
+    background-color: var(--azul);
     color: var(--branco);
     cursor: pointer;
     transition: 0.2s;
     margin-right: 25px;
+    transition: all 0.2s;
   }
 
-  .btn-contato:hover {
-    scale: 1.1;
-  }
 
   .btn-contato button:hover {
     background-color: var(--cinza2);
@@ -244,7 +251,7 @@ header {
   bottom: 0;
   width: 50%;
   height: 8px;
-  background: linear-gradient(to right, transparent, #50128f, transparent);
+  background: linear-gradient(to right, transparent, #0b4462, transparent);
   animation: neon 1.5s infinite alternate;
 }
 
@@ -258,9 +265,9 @@ header {
 
 @keyframes neon {
   from {
-    box-shadow: 0 0 10px #50128f, 0 0 20px #50128f, 0 0 30px #50128f,
-      0 0 40px #50128f, 0 0 70px #50128f, 0 0 80px #8e43b3, 0 0 100px #8e43b3,
-      0 0 150px #8e43b3;
+    box-shadow: 0 0 10px #0b4462, 0 0 20px #0b4462, 0 0 30px #0b4462,
+      0 0 40px #0b4462, 0 0 70px #0b4462, 0 0 80px #2489c0, 0 0 100px #2489c0,
+      0 0 150px #2489c0;
   }
 
   to {
@@ -394,7 +401,6 @@ header {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background: linear-gradient(to bottom, #0a0928 1%, #0a0928 1%);
   margin-top: 50px;
 }
 
@@ -423,46 +429,27 @@ header {
   text-align: justify;
 }
 
-.sobre-body a {
-  margin-top: 10px;
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 10px;
-  background-color: var(--roxo2);
-  font-size: 15px;
-  color: var(--branco);
-  transition: all .4s ease-in-out;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.sobre-body a:hover {
-  background-color: var(--verde);
-}
-
-
-
 .desenvolvedores:has(.box[data-color="clr1"]:hover) {
-  background: linear-gradient(to bottom, #0a0928 1%, #cb58f8);
+  background: linear-gradient(to bottom, #0a0928 1%, #145d85);
 }
 
 .desenvolvedores:has(.box[data-color="clr2"]:hover) {
-  background: linear-gradient(to bottom, #0a0928 1%, #7f00b2);
+  background: linear-gradient(to bottom, #0a0928 1%, #145d85);
 }
 
 .desenvolvedores:has(.box[data-color="clr3"]:hover) {
-  background: linear-gradient(to bottom, #0a0928 1%, #bc4ed8);
+  background: linear-gradient(to bottom, #0a0928 1%, #145d85);
 }
 
 .desenvolvedores:has(.box[data-color="clr4"]:hover) {
-  background: linear-gradient(to bottom, #0a0928 1%, #610391);
+  background: linear-gradient(to bottom, #0a0928 1%, #145d85);
 }
 
 .desenvolvedores {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom, #0a0928 1%, #8e43b3);
+  background: linear-gradient(to bottom, #145d85 1%, #bebebe);
   min-height: 70vh;
   margin-top: 50px;
   transition: 0.5s;
@@ -577,7 +564,7 @@ header {
 
   & .container .box ul a {
     margin-bottom: -10px;
-    color: var(--branco);
+    color: yellow;
     font-size: 1.25em;
     scale: 0;
     transition: 0.25s;
@@ -600,7 +587,7 @@ footer {
   margin-top: 30px;
   position: relative;
   width: 100%;
-  background: #7f00b2;
+  background: #145d85;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;

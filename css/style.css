@@ -790,7 +790,7 @@ ul.social_icon {
 
   .box-container {
     h3 {
-      color: rgb(255, 255, 255);
+      color: var(--azul);
       font-size: 1.5em;
       padding-right: 160px;
       margin-top: 345%;
@@ -872,6 +872,7 @@ ul.social_icon {
   .sobre-image img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 2rem;
   }
 
   .sobre {
@@ -882,9 +883,6 @@ ul.social_icon {
   .sobre h1 {
     margin-bottom: 2rem;
     color: #ffffff;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
-      0 0 40px var(--roxo2), 0 0 70px var(--roxo2), 0 0 80px var(--roxo2),
-      0 0 100px var(--roxo2), 0 0 150px var(--roxo2);
     font-size: 2.4rem;
   }
 
@@ -894,7 +892,7 @@ ul.social_icon {
     align-items: center;
 
     img {
-      width: 23rem;
+      width: 22rem;
       height: 14rem;
       margin-left: 74px;
     }
@@ -913,24 +911,13 @@ ul.social_icon {
     text-align: justify;
   }
 
-  .sobre-body a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 10px;
-    font-weight: bold;
-    background-color: var(--verde);
-    font-size: 15px;
-    color: var(--branco);
-    border-radius: 5px;
-    text-decoration: none;
-  }
-
   .desenvolvedores {
 
     margin-bottom: 3rem;
 
     .titulo {
       font-size: 2.3rem;
+      margin-top: 2rem;
     }
 
     .container .box {
@@ -991,10 +978,10 @@ ul.social_icon {
   .mobile-menu .btn-contato button {
     width: 100%;
     padding: 3px 15px;
-    border-radius: 10px;
+    border-radius: 15px;
 
     a {
-      color: #50128f;
+      color: var(--azul);
       font-size: 1.2em;
       font-weight: bold;
     }
@@ -1012,21 +999,6 @@ ul.social_icon {
     height: 100%;
     background-color: #00000000;
     z-index: 99;
-
-    & h1 {
-      text-align: center;
-      margin-top: 300%;
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 400;
-      font-style: normal;
-      color: #ffffff;
-      text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
-        0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f,
-        0 0 150px #00f;
-      /* sombras para criar o efeito de brilho */
-      font-size: 4em;
-      padding-left: 30px;
-    }
 
     & p {
       display: none;
@@ -1100,8 +1072,9 @@ ul.social_icon {
 
   .box-container {
     h3 {
-      color: rgb(255, 255, 255);
-      font-size: 1.5em;
+      margin-top: 28rem;
+      color: var(--azul);
+      font-size: 2.5rem;
       padding-right: 160px;
     }
   }
@@ -1173,6 +1146,7 @@ ul.social_icon {
       width: 29rem;
       height: 19rem;
       margin-left: 32px;
+      margin-bottom: 5rem;
   }
   }
 
@@ -1189,17 +1163,6 @@ ul.social_icon {
     text-align: justify;
   }
 
-  .sobre-body a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 10px;
-    font-weight: bold;
-    background-color: var(--verde);
-    font-size: 15px;
-    color: var(--branco);
-    border-radius: 5px;
-    text-decoration: none;
-  }
 
   .cards.flex4 {
     margin-top: 30px;
@@ -1270,7 +1233,7 @@ ul.social_icon {
 
   .btn-contato {
     a {
-      color: #50128f;
+      color: var(--azul);
       font-size: 1.2em;
     }
   }

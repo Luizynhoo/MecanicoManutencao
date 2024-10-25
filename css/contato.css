@@ -40,7 +40,7 @@ body {
 
 .loader {
   border: 16px solid #efeee8;
-  border-top: 16px solid #0032a0;
+  border-top: 16px solid #595a5a;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -116,11 +116,6 @@ html {
   /*para a animação de rolagem ficar suave*/
 }
 
-.logo {
-  & img {
-    width: 12rem;
-  }
-}
 
 /*cfg todo header*/
 header {
@@ -550,7 +545,16 @@ ul.social_icon {
 
 @media (max-width: 991px) {
   body {
-    background: linear-gradient(90deg, #0a0928 1%, #8e43b3);
+    background: linear-gradient(90deg, #0a0928 1%, #145d85);
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    background: var(--azul);
+    border-radius: 10px;
   }
 
   .contateNos {
@@ -634,7 +638,7 @@ ul.social_icon {
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
-    background: var(--roxo3);
+    background: #145e858c;
     border-radius: 10px;
   }
 
@@ -666,20 +670,6 @@ ul.social_icon {
     background-color: #00000000;
     z-index: 99;
 
-    & h1 {
-      text-align: center;
-      margin-top: 300%;
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 400;
-      font-style: normal;
-      color: #ffffff;
-      text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
-        0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f,
-        0 0 150px #00f;
-      /* sombras para criar o efeito de brilho */
-      font-size: 4em;
-      padding-left: 30px;
-    }
 
     & p {
       display: none;
